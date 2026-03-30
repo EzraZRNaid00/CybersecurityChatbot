@@ -23,12 +23,58 @@ namespace CybersecurityChatbot
 
         private void LoadIntents()
         {
-            // Start with just ONE intent to test
+            // Existing Greeting intent
             _intents.Add(new Intent(
                 "Greeting",
                 new List<string> { "how are you", "hello", "hi" },
                 new List<string> {
-                    "I'm doing well! How can I help you today?"
+            "I'm doing well! How can I help you today?",
+            "Hello! Ready to learn about cybersecurity?"
+                }
+            ));
+
+            // Add Purpose intent
+            _intents.Add(new Intent(
+                "Purpose",
+                new List<string> { "purpose", "what do you do", "what can you do" },
+                new List<string> {
+            "I'm here to help you stay safe online! I can teach you about passwords, phishing, and safe browsing."
+                }
+            ));
+
+            // Add Password intent
+            _intents.Add(new Intent(
+                "Password",
+                new List<string> { "password", "pass" },
+                new List<string> {
+            "🔐 Password Safety:\n• Use a unique password for each account\n• Make passwords at least 12 characters long\n• Use a mix of uppercase, lowercase, numbers, and symbols"
+                }
+            ));
+
+            // Add Phishing intent
+            _intents.Add(new Intent(
+                "Phishing",
+                new List<string> { "phish", "phishing", "scam" },
+                new List<string> {
+            "🎣 Phishing Awareness:\n• Never click suspicious links\n• Check sender email addresses carefully\n• Legitimate companies won't ask for passwords via email"
+                }
+            ));
+
+            // Add Safe Browsing intent
+            _intents.Add(new Intent(
+                "Browsing",
+                new List<string> { "brows", "browsing", "safe online" },
+                new List<string> {
+            "🌐 Safe Browsing Tips:\n• Look for 'https://' in the address bar\n• Avoid downloading from untrusted sources\n• Keep your browser updated"
+                }
+            ));
+
+            // Add Goodbye intent
+            _intents.Add(new Intent(
+                "Goodbye",
+                new List<string> { "exit", "quit", "bye", "goodbye" },
+                new List<string> {
+            "Thank you for chatting! Stay safe online!"
                 }
             ));
         }
