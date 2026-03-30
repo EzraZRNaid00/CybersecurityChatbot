@@ -47,7 +47,7 @@ namespace CybersecurityChatbot
                 "Password",
                 new List<string> { "password", "pass" },
                 new List<string> {
-            "🔐 Password Safety:\n• Use a unique password for each account\n• Make passwords at least 12 characters long\n• Use a mix of uppercase, lowercase, numbers, and symbols"
+            " Password Safety:\n• Use a unique password for each account\n• Make passwords at least 12 characters long\n• Use a mix of uppercase, lowercase, numbers, and symbols"
                 }
             ));
 
@@ -56,7 +56,7 @@ namespace CybersecurityChatbot
                 "Phishing",
                 new List<string> { "phish", "phishing", "scam" },
                 new List<string> {
-            "🎣 Phishing Awareness:\n• Never click suspicious links\n• Check sender email addresses carefully\n• Legitimate companies won't ask for passwords via email"
+            " Phishing Awareness:\n• Never click suspicious links\n• Check sender email addresses carefully\n• Legitimate companies won't ask for passwords via email"
                 }
             ));
 
@@ -65,7 +65,7 @@ namespace CybersecurityChatbot
                 "Browsing",
                 new List<string> { "brows", "browsing", "safe online" },
                 new List<string> {
-            "🌐 Safe Browsing Tips:\n• Look for 'https://' in the address bar\n• Avoid downloading from untrusted sources\n• Keep your browser updated"
+            " Safe Browsing Tips:\n• Look for 'https://' in the address bar\n• Avoid downloading from untrusted sources\n• Keep your browser updated"
                 }
             ));
 
