@@ -34,11 +34,13 @@ namespace CybersecurityChatbot
         public string GetResponse()
         {
             if (Responses == null || Responses.Count == 0)
-                return "I am unable to give you a valid response";
+                return "I am unable to give you a valid response";   
 
             Random random = new Random();
             int index = random.Next(Responses.Count);
             return Responses[index];
+
+
         }
     }
 }
