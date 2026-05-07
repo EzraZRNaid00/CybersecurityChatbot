@@ -1,0 +1,71 @@
+﻿@model EventEase1.Models.Venue
+
+@{
+    ViewData["Title"] = "Venue Details";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-info-circle me-2"></i>Venue Details
+                    </h4>
+                </div>
+                <div class="card-body">
+                    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+                    {
+                        <div class="text-center mb-4">
+                            <img src="@Model.ImageUrl" alt="@Model.Name" style="max-width: 100%; max-height: 300px; border-radius: 10px;" />
+                        </div>
+                    }
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">
+                            <i class="fas fa-building me-1"></i> Venue Name:
+                        </div>
+                        <div class="col-md-8">@Model.Name</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">
+                            <i class="fas fa-map-marker-alt me-1"></i> Location:
+                        </div>
+                        <div class="col-md-8">@Model.Location</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">
+                            <i class="fas fa-users me-1"></i> Capacity:
+                        </div>
+                        <div class="col-md-8">@Model.Capacity people</div>
+                    </div>
+
+                    <div class="row mb-3">
+                        <div class="col-md-4 fw-bold">
+                            <i class="fas fa-image me-1"></i> Image URL:
+                        </div>
+                        <div class="col-md-8"><code>@Model.ImageUrl</code></div>
+                    </div>
+
+                    <hr />
+
+                    <div class="d-flex justify-content-between">
+                        <a asp-action="Index" class="btn btn-secondary">
+                            <i class="fas fa-arrow-left me-1"></i> Back to List
+                        </a>
+                        <div>
+                            <a asp-action="Edit" asp-route-id="@Model.VenueId" class="btn btn-warning">
+                                <i class="fas fa-edit me-1"></i> Edit
+                            </a>
+                            <a asp-action="Delete" asp-route-id="@Model.VenueId" class="btn btn-danger">
+                                <i class="fas fa-trash me-1"></i> Delete
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

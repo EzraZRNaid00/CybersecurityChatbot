@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">
+                        <i class="fas fa-shield-alt me-2"></i>Privacy Policy
+                    </h4>
+                </div>
+                <div class="card-body">
+                    <p class="lead">Last updated: @DateTime.Now.ToString("MMMM dd, yyyy")</p>
+                    
+                    <div class="alert alert-info">
+                        <i class="fas fa-info-circle me-2"></i>
+                        EventEase is committed to protecting your privacy and ensuring the security of your information.
+                    </div>
+
+                    <h5><i class="fas fa-database me-2 text-primary"></i>1. Information We Collect</h5>
+                    <p>EventEase collects the following information to facilitate venue and event bookings:</p>
+                    <ul>
+                        <li><strong>Personal Information:</strong> Customer names and contact details provided during booking</li>
+                        <li><strong>Booking Information:</strong> Event preferences, venue selections, dates, and number of tickets</li>
+                        <li><strong>Usage Data:</strong> How you interact with our booking platform</li>
+                    </ul>
+
+                    <h5><i class="fas fa-chart-line me-2 text-primary"></i>2. How We Use Your Information</h5>
+                    <p>Your information helps us to:</p>
+                    <ul>
+                        <li>Process and manage venue and event bookings</li>
+                        <li>Prevent double bookings and scheduling conflicts</li>
+                        <li>Improve our booking platform and user experience</li>
+                        <li>Communicate important updates about your bookings</li>
+                        <li>Analyze booking trends to better serve our customers</li>
+                    </ul>
+
+                    <h5><i class="fas fa-cloud-upload-alt me-2 text-primary"></i>3. Data Storage and Security</h5>
+                    <p>EventEase takes data security seriously:</p>
+                    <ul>
+                        <li>All booking information is stored securely in encrypted databases</li>
+                        <li>Access to customer data is restricted to authorized personnel only</li>
+                        <li>Regular security audits and updates are performed</li>
+                        <li>Data is backed up to prevent loss</li>
+                    </ul>
+
+                    <h5><i class="fas fa-share-alt me-2 text-primary"></i>4. Information Sharing</h5>
+                    <p>We do not sell or share your personal information with third parties except:</p>
+                    <ul>
+                        <li>When required by law or legal process</li>
+                        <li>To protect the rights and safety of EventEase or its customers</li>
+                        <li>With venue partners to facilitate your booking (limited to necessary information)</li>
+                    </ul>
+
+                    <h5><i class="fas fa-cookie-bite me-2 text-primary"></i>5. Cookies and Tracking</h5>
+                    <p>Our platform uses cookies to:</p>
+                    <ul>
+                        <li>Remember your preferences and session information</li>
+                        <li>Analyze website traffic and usage patterns</li>
+                        <li>Improve platform performance and user experience</li>
+                    </ul>
+                    <p>You can disable cookies in your browser settings, but this may affect platform functionality.</p>
+
+                    <h5><i class="fas fa-user-check me-2 text-primary"></i>6. Your Rights</h5>
+                    <p>You have the right to:</p>
+                    <ul>
+                        <li>Access the personal information we hold about you</li>
+                        <li>Request corrections to inaccurate information</li>
+                        <li>Request deletion of your data (subject to legal requirements)</li>
+                        <li>Opt-out of marketing communications</li>
+                    </ul>
+
+                    <h5><i class="fas fa-envelope me-2 text-primary"></i>7. Contact Us</h5>
+                    <p>If you have questions about this privacy policy or your data, please contact us:</p>
+                    <ul>
+                        <li><i class="fas fa-envelope me-1"></i> Email: privacy@eventease.com</li>
+                        <li><i class="fas fa-phone me-1"></i> Phone: (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt me-1"></i> Address: 123 Event Street, Business District, City</li>
+                    </ul>
+
+                    <hr />
+
+                    <div class="text-muted small">
+                        <p>EventEase reserves the right to update this privacy policy at any time. Changes will be posted on this page with an updated revision date.</p>
+                        <p class="mb-0">© @DateTime.Now.Year EventEase - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--   back to home button -->
+            <div class="text-center mt-4">
+                <a asp-controller="Home" asp-action="Index" class="btn btn-primary">
+                    <i class="fas fa-home me-1"></i> Back to Home
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
